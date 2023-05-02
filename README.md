@@ -1,4 +1,4 @@
-# robofut23
+# Robo Fútbol BALAM 2023
 
 ## Instalación de la Tarjeta ESP32
 
@@ -38,3 +38,28 @@ Puede seguir está guía para la instalación como una segunda opción
 [Sigue la guía para instalar el driver CH340][DRIVER_CH340]
 
 [DRIVER_CH340]: https://www.arduined.eu/ch340-windows-10-driver-download/
+
+## Pinout
+
+### Voltaje de alimentación
+Nombre | GPIO 
+--- | --- 
+VCC | 5VDC a 12VDC
+VSS | GND
+
+### Motores de movimiento (M1 & M2)
+Nombre | GPIO 
+--- | --- 
+AIN_1 | 32
+AIN_2 | 33
+BIN_1 | 25
+BIN_2 | 26
+
+### Motores de disparo (M3 & M4)
+
+Nombre | GPIO 
+--- | --- 
+AIN_1 | 18
+AIN_2 | 4
+BIN_1 | 27
+BIN_2 | 14
