@@ -9,6 +9,11 @@
 #define AIN2 4
 #define BIN1 27
 #define BIN2 14
+#define AIN1_1 32
+#define AIN2_1 33
+#define BIN1_1 25
+#define BIN2_1 26
+
 
 //Declaración de variables
 const int valorMinPWM = 150;
@@ -24,6 +29,10 @@ void setup() {
   pinMode(AIN2, OUTPUT);
   pinMode(BIN1, OUTPUT);
   pinMode(BIN2, OUTPUT);
+  pinMode(AIN1_1, OUTPUT);
+  pinMode(AIN2_1, OUTPUT);
+  pinMode(BIN1_1, OUTPUT);
+  pinMode(BIN2_1, OUTPUT);
 
 }
 
@@ -44,7 +53,7 @@ void loop() {
   int joystickY = GamePad.getYaxisData();
   int quadrant = getQuadrant(angle, radio, pwm);
 
-                 //-------------- Condiciones para el funcionamiento de los motores --------------
+  //-------------- Condiciones para el funcionamiento de los motores --------------
   if (quadrant == 1) {
     //Giro en el primer cuadrante
     analogWrite(AIN1, pwm);
@@ -108,12 +117,32 @@ void loop() {
     analogWrite(BIN1, 255);
     analogWrite(BIN2, 255);
 
+  } else  if (GamePad.isSquarePressed()) {
+    //Activa motores para soltar la pelota
+    analogWrite(AIN1_1, valorMaxPWM);
+    digitalWrite(AIN2_1, LOW);
+    analogWrite(BIN1_1, valorMaxPWM);
+    digitalWrite(BIN2_1, LOW);
+    delay(tiempoPruebas);
+
+  } else if (GamePad.isCirclePressed()) {
+    //Activa motores para retener la pelota
+    digitalWrite(AIN1_1, LOW);
+    analogWrite(AIN2_1, valorMaxPWM);
+    digitalWrite(BIN1_1, LOW);
+    analogWrite(BIN2_1, valorMaxPWM);
+    delay(tiempoPruebas);
+
   } else {
     //Reinicia el valor de los motores cuando no se utilizan
     analogWrite(AIN1, 0);
     analogWrite(AIN2, 0);
     analogWrite(BIN1, 0);
     analogWrite(BIN2, 0);
+    analogWrite(AIN1_1, 0);
+    analogWrite(AIN2_1, 0);
+    analogWrite(BIN1_1, 0);
+    analogWrite(BIN2_1, 0);
   }
 }
 
