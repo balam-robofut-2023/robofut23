@@ -69,9 +69,9 @@ BIN_1 -->M4 | 27
 BIN_2 -->M4 | 14
 
 ## Manejo de motores
-Es muy importante que puedas comprender el manejo de los motores realizando un control digital binario (HIGH y LOW) y un control con PWM (Valores entre 0 - 255).
+Es muy importante que puedas comprender el manejo de los motores realizando un control digital binario (HIGH y LOW) y un control con PWM (valores entre 0 - 255).
 
-Para ello es recomendable que puedas revisar la hoja de datos de Texas Instruments del Driver de motores que utilizamos.
+Para comprender mejor el tema es recomendable que puedas revisar la hoja de datos de Texas Instruments del Driver de motores que utilizamos.
 
 El modelo del driver es el DRV8833 y aquí puedes descargar su hoja de datos. [DRV8833]
 
