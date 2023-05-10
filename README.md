@@ -67,3 +67,14 @@ AIN_1 -->M3 | 18
 AIN_2 -->M3 | 4
 BIN_1 -->M4 | 27
 BIN_2 -->M4 | 14
+
+##Manejo de motores
+Es muy importante que puedas comprender el manejo de los motores realizando un control digital binario (HIGH y LOW) y un control con PWM (Valores entre 0 - 255).
+
+Para ello es recomendable que puedas revisar la hoja de datos de Texas Instruments del Driver de motores que utilizamos.
+
+El modelo del driver es el DRV8833 y aquí puedes descargar su hoja de datos. [DRV8833]
+
+[DRV8833]:https://www.ti.com/lit/ds/symlink/drv8833.pdf?ts=1683643400859&ref_url=https%253A%252F%252Fwww.google.com.ar%252F
+
+
