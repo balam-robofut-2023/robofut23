@@ -51,19 +51,19 @@ Nombre | GPIO
 VCC | 5VDC a 12VDC
 VSS | GND
 
-### Motores de movimiento (M1 & M2)
+### Motores de disparo (M1 & M2)
 Nombre | GPIO 
 --- | --- 
-AIN_1 | 32
-AIN_2 | 33
-BIN_1 | 25
-BIN_2 | 26
+AIN_1 -->M1 | 32
+AIN_2 -->M1 | 33
+BIN_1 -->M2 | 25
+BIN_2 -->M2 | 26
 
-### Motores de disparo (M3 & M4)
+### Motores de movimiento (M3 & M4)
 
 Nombre | GPIO 
 --- | --- 
-AIN_1 | 18
-AIN_2 | 4
-BIN_1 | 27
-BIN_2 | 14
+AIN_1 -->M3 | 18
+AIN_2 -->M3 | 4
+BIN_1 -->M4 | 27
+BIN_2 -->M4 | 14
