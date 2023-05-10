@@ -1,4 +1,4 @@
-# Robo Fútbol BALAM 2023
+# RoboFUT BALAM 2023
 
 ## Instalación de la Tarjeta ESP32
 
