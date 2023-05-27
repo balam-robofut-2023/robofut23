@@ -52,21 +52,21 @@ VCC | 5VDC a 12VDC
 VSS | GND
 
 ### Motores de disparo (M1 & M2)
-Nombre | GPIO 
---- | --- 
-AIN_1 -->M1 | 32
-AIN_2 -->M1 | 33
-BIN_1 -->M2 | 25
-BIN_2 -->M2 | 26
+Nombre | Motor |GPIO 
+--- | --- | --- 
+AIN_1 | M1 | 32
+AIN_2 | M1 | 33
+BIN_1 | M2 | 25
+BIN_2 | M2 | 26
 
 ### Motores de movimiento (M3 & M4)
 
-Nombre | GPIO 
---- | --- 
-AIN_1 -->M3 | 18
-AIN_2 -->M3 | 4
-BIN_1 -->M4 | 27
-BIN_2 -->M4 | 14
+Nombre | Motor |GPIO 
+--- | --- | --- 
+AIN_1 | M3 | 18
+AIN_2 | M3 | 4
+BIN_1 | M4 | 27
+BIN_2 | M4 | 14
 
 ## Manejo de motores
 Es muy importante que puedas comprender el manejo de los motores realizando un control digital binario (HIGH y LOW) y un control con PWM (valores entre 0 - 255).
